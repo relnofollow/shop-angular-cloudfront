@@ -17,3 +17,17 @@
     object-position: center center;
   }
 }
+
+.product-title {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.product-subtitle {
+  display: flex;
+  justify-content: space-between;
+
+  &__age {
+    font-weight: 300;
+  }
+}
