@@ -1,10 +1,9 @@
 # Shop Angular Cloudfront
 
+CloudFront URL: [d2vtpotpr14qt7.cloudfront.net](https://d2vtpotpr14qt7.cloudfront.net/)  
+S3 Website URL: [constructor-shop-957659.s3-website.eu-central-1.amazonaws.com](http://constructor-shop-957659.s3-website.eu-central-1.amazonaws.com/)
+
 Angular version: ~12.
-
-Repo maintainers:
-
-- [Sergey Gultyayev](https://github.com/gultyaev)
 
 ## The purpose
 
