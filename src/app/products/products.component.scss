@@ -2,17 +2,31 @@
 @import "~bootstrap/scss/variables";
 @import "~bootstrap/scss/mixins/breakpoints";
 
-.container {
-  display: grid;
-  grid-template-columns: 1fr;
+app-products {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
 
-  grid-gap: 30px;
+    grid-gap: 30px;
 
-  @include media-breakpoint-up(md) {
-    grid-template-columns: 1fr 1fr;
+    @include media-breakpoint-up(md) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @include media-breakpoint-up(lg) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
   }
 
-  @include media-breakpoint-up(lg) {
-    grid-template-columns: 1fr 1fr 1fr;
+  .product-item > {
+    mat-card {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+
+      > mat-card-content {
+        flex-grow: 1;
+      }
+    }
   }
 }

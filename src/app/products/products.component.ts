@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { ProductsService } from './products.service';
 import { Observable } from 'rxjs';
 import { Product } from './product.interface';
@@ -7,11 +7,11 @@ import { Product } from './product.interface';
   selector: 'app-products',
   templateUrl: './products.component.html',
   styleUrls: ['./products.component.scss'],
+  encapsulation: ViewEncapsulation.None,
 })
 export class ProductsComponent implements OnInit {
-  readonly products$: Observable<
-    Product[]
-  > = this.productsService.getProducts();
+  readonly products$: Observable<Product[]> =
+    this.productsService.getProducts();
 
   constructor(private readonly productsService: ProductsService) {}
 
