@@ -32,6 +32,16 @@ body {
   }
 }
 
+.shop-snackbar-success {
+  background-color: #00b803;
+  color: white;
+
+  button {
+    color: white;
+    border: 1px solid;
+  }
+}
+
 .mat-toolbar.mat-primary {
   background: #c64747;
 }
